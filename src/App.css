@@ -1,0 +1,166 @@
+.body{
+background-color: aqua;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    left: 41vw;
+    max-width: 350px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .SquareForm{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    border: solid 5px rgba(189, 189, 189, 0.555);
+    position: relative;
+    border-radius: 60px;
+    top: 25vw;
+    right: 4.7vw;
+    box-shadow: -15px 21px 51px 8px rgba(33,33,33,0.49);
+-webkit-box-shadow: -15px 21px 51px 8px rgba(33,33,33,0.49);
+-moz-box-shadow: -15px 21px 51px 8px rgba(33,33,33,0.49);
+}
+  
+
+.ImageDesign{
+position: relative;
+top: -8vw;
+left: 64vw;
+}
+
+
+  .title {
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    letter-spacing: -1px;
+    position: relative;
+    text-shadow: 7px 3px 7px rgba(173, 173, 173, 0.69);
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: rgb(223, 159, 22);
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: rgb(223, 159, 22);
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(0, 0, 0, 0.822);
+    font-size: 16px;
+    z-index: 1;
+  }
+  
+  .signin {
+    text-align: center;
+    color: whitesmoke;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    border-radius: 14px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: solid 3px rgba(255, 255, 255, 0.144);
+    outline: none;
+    background-color: rgb(196, 122, 25);
+    padding: 10px;
+    z-index: 1;
+    border-radius: 10px;
+    color: #fff;
+    position: relative;
+    top: -20px;
+    left: 12px;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(211, 176, 20);
+    cursor: pointer;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
